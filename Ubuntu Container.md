@@ -19,7 +19,7 @@
 ### 4. Configure Your New Ubuntu Container:
 - Configure the resources for your container, including CPU cores, memory, and swap space.
 ### 5. Network:
-- Configure the network settings for your container. You can choose from different network modes like DHCP or manual IP assignment. ***For our server you need to should confgure a STATIC IP***
+- Configure the network settings for your container. You can choose from different network modes like DHCP or manual IP assignment. ***For our server you need to set a STATIC IP***
 ### 6. Storage:
 - Choose the storage location where the container's files will be stored. You can select an existing storage pool or create a new one.
 ### 7. Confirm Settings:
