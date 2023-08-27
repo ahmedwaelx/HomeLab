@@ -2,9 +2,9 @@
 
 ##### Portainer is an open-source container management platform with a user-friendly web interface for Docker, Kubernetes, and Docker Swarm. It simplifies container deployment, monitoring, and access control, making it ideal for small to medium-sized teams and educational purposes, while offering rapid prototyping and streamlined distributed deployment management.
 
-![Alt text](Images\image-5.png)
-![Alt text](Images\image-6.png)
-![Alt text](Images\image-7.png)
+![Alt text](Images/image-5.png)
+![Alt text](Images/image-6.png)
+![Alt text](Images/image-7.png)
 
 ***For more simplicity, It's web interface to creating and managing all your docker containers, images, stacks, and more!***
 
