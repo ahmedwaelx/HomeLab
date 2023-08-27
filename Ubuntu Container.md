@@ -8,14 +8,14 @@
 1. Go to local (proxmox)
 2. Go to CT Templates
 3. Click on Templates
-![Alt text](Images\image-3.png)
+![Alt text](Images/image-3.png)
 4. Now you have A LOT of options to download, but for now we will stick to Ubuntu 20.04 
-![Alt text](Images\image-4.png)
+![Alt text](Images/image-4.png)
 ### 3. Create an Ubuntu Container:
 - In the Proxmox web interface, click on "Create CT" (CT stands for Container).
 - Select "Ubuntu" as the template for the container.
-![Alt text](Images\image-1.png)
-![Alt text](Images\image-2.png)
+![Alt text](Images/image-1.png)
+![Alt text](Images/image-2.png)
 ### 4. Configure Your New Ubuntu Container:
 - Configure the resources for your container, including CPU cores, memory, and swap space.
 ### 5. Network:
