@@ -1,6 +1,6 @@
 # Heimdall Dashbord
 ##### It's offering a single interface for accessing self-hosted services. It simplifies service management, supports web apps and media servers, and streamlines deployment and updates, enhancing the accessibility of self-hosted applications.
-![Alt text](Images\image-9.png)
+![Alt text](Images/image-9.png)
 
 ## 1. Heimdall installation using portainer
 - ### 1.1 Go to Portainer App Templates
