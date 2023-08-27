@@ -37,6 +37,7 @@ de5b28eb2fa9   portainer/portainer-ee:latest  "/portainer"             2 weeks a
 https://localhost:9443
 ```
 You should get this interface:
+
 ![Alt text](image-8.png)
 ***And once you finish your configurations you should be redirected to your [portainer interface](image-5.png).***
 
