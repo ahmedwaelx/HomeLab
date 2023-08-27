@@ -34,9 +34,16 @@
 - Click "Install" to start the installation process.
 ### 11. Installation Progress:
 - The installer will copy files and configure the system. This may take a few minutes.
+*You could think it's stuck but it's okay just give it some time.*
 ### 12. Reboot:
 - Once the installation is complete, click "Reboot."
 ### 13. Login to Proxmox Web Interface:
 - Open a web browser on another device and enter the IP address you configured during installation followed by port 8006 (e.g., https://your_server_ip:8006).
 - You'll see a security warning; proceed to the interface.
 - Log in with the admin account you created during installation.
+### 14. Configuring your Proxmox Storage for your VMs and Containers
+- For video refrence i advice you to watch Network Chuck's [Video](https://www.youtube.com/watch?v=_u8qTN3cCnQ&t=1599s&ab_channel=NetworkChuck)
+
+## Finally, Your Proxmox is READY!
+### It should be somthing like this:
+![Alt text](image.png)
