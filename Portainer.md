@@ -38,7 +38,7 @@ https://localhost:9443
 ```
 You should get this interface:
 
-![Alt text](Images\image-8.png)
+![Alt text](Images/image-8.png)
 ***And once you finish your configurations you should be redirected to your [portainer interface](Images\image-5.png).***
 
 Portainer Official Installation instruction:
