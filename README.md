@@ -1,4 +1,4 @@
-# Turning your old PC into Home Server
+# Turning your old PC into Home Server ( In Progress )
 
 ### Turn Your Old PC into a Resource-Efficient Home Server for Your Home Lab
 
