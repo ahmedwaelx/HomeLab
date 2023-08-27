@@ -46,4 +46,4 @@
 
 ## Finally, Your Proxmox is READY!
 ### It should be somthing like this:
-![Alt text](image.png)
+![Alt text](Images\image.png)
