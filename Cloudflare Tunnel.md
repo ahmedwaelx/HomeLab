@@ -32,7 +32,7 @@ Create an account if not already done so by going here: https://dash.cloudflare.
 ![Alt text](Images/image-19.png)
 It will be like this
 ```
-docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiYTRjZGUyYTkxZDY3NjY4MjE2MTAwZWMwMDk0ZWZlY2UiLCJ0IjoiMDM4ZTZmNTgtMGE2My00MzcxLTgwN2YtYWY0OGZlZWE1**********wicyI6Ik16VmhZemhrTW1JdE9UYzVOaTAwWXpsakxUZzJZMlF0WkRaa1pEVXpZVFkyTlRnMCJ9
+docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiYTRjZGUyYTkxZDY3NjY4MjE2MTAwZWMwMDk0ZWZlY2UiLCJ0IjoiMDM4ZTZmNTgtMGE2My00MzcxLTgwN2YtYWY0OGZlZWE1**********wicyI6Ik16VmhZemhrTW1JdE9UYzVOaTAwWXps**************pEVXpZVFkyTlRnMCJ9
 ```
 - You will get a green pop-up message in the end of the screen to confirm that your connector is succesfully installed
 - Now click on save button at bottom right corner
