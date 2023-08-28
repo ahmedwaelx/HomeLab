@@ -50,4 +50,4 @@ docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJh
 ***Note: If you chose HTTPS you'll need to click on "addtional application settings" and then "TLS" and enable  "No TLS Verify" and "HTTPS2 Connection"***
 - Now click on “Create”. You’ll see something like this after creating a tunnel successfully.
 
-## NoW you can access your local self-hosted service over the Internet from anywhere with SECURE HTTPS TUNNEL!
+## Now you can access your local self-hosted service over the Internet from anywhere with SECURE HTTPS TUNNEL!
