@@ -1,4 +1,4 @@
-# Turning your old PC into Home Server ( In Progress )
+# 🚀 Turning your old PC into Home Server ( In Progress )
 
 ### Turn Your Old PC into a Resource-Efficient Home Server for Your Home Lab
 
@@ -20,24 +20,21 @@ Have an old PC lying around? Don't let it go to waste! Transform it into a power
 
 ## Contents:
 
-### 1. **Hardware Assessment:**
- Determine if your old PC meets the basic requirements to serve as a home server.
+### [x] 1. **Hardware Assessment:**
+- Determine if your old PC meets the basic requirements to serve as a home server.
 
-### 2. **Choosing the Right OS:**
- Explore lightweight Linux distributions and other operating systems suitable for minimal hardware.
+### [x] 2. **Choosing the Right OS:**
+- Explore lightweight Linux distributions and other operating systems suitable for minimal hardware.
 
-### 3. **Installation Guide:**
- Follow the step-by-step installation instructions for your chosen OS.
+### [x] 3. **Installation Guide:**
+- Follow the step-by-step installation instructions for your chosen OS.
 
-### 4. **Service Setup:**
- Configure essential services such as file sharing (Samba, NFS), media streaming (Plex, Jellyfin), and virtualization (Proxmox, VirtualBox).
+### [x] 4. **Remote Access:** 
+- Set up remote access tools like SSH and VPN to manage your server from anywhere.
 
-### 5. **Security Measures:**
- Learn how to secure your home server and network to protect your data and privacy.
-
-### 6. **Remote Access:** Set up remote access tools like SSH and VPN to manage your server from anywhere.
-
-### 7. **Maintenance and Troubleshooting:** Tips for keeping your server running smoothly and addressing common issues.
+### [ ] 5. **Service Setup:**
+- Configure essential services such as file sharing (Samba, NFS), media streaming (Plex, Jellyfin), and virtualization (Proxmox, VirtualBox).
 
 
-*Transform your old PC into a dynamic home server and unleash the potential of your personal home lab. Follow this guide and take the first steps towards an efficient, low-cost, and resource-conscious server setup.*
+### [ ] 6. **Maintenance and Troubleshooting:**
+- Tips for keeping your server running smoothly and addressing common issues.
