@@ -28,6 +28,7 @@ Create an account if not already done so by going here: https://dash.cloudflare.
 - Set up the subdomain for which you want to create a tunnel.(e.g : dev.mydomain.com )
 - Install Connector
 - Pick your favorite connecter (In this case we will use Docker Connecter)
+
 ![Alt text](Images/image-19.png)
 It will be like this
 ```
@@ -45,6 +46,7 @@ docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJh
 - **Protocol** - HTTP or HTTPS
 - **Hostname** - localhost (this should match with hostname that we have set while running our local server.)
 - **Port Number** - Enter your service port number
+
 ![Alt text](Images/image-21.png)
 - After filling out these details click on “Create”. You’ll see something like this below after creating the tunnel successfully.
 ***Note: If you chose HTTPS you'll need to click on "addtional application settings" and then "TLS" and enable  "No TLS Verify" and "HTTPS2 Connection"***
