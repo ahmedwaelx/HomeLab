@@ -1,4 +1,5 @@
 # 🚀 Turning your old PC into Home Server ( In Progress )
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/ahmmedwael)
 
 ### Turn Your Old PC into a Resource-Efficient Home Server for Your Home Lab
 
@@ -38,3 +39,7 @@ Have an old PC lying around? Don't let it go to waste! Transform it into a power
 
 ### [ ] 6. **Maintenance and Troubleshooting:**
 - Tips for keeping your server running smoothly and addressing common issues.
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
