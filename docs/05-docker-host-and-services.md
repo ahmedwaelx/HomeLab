@@ -1,5 +1,10 @@
 # Docker host and service catalog
 
+## Service map
+
+<p align="center">
+  <img src="../assets/service-map.svg" alt="Service map" width="100%">
+</p>
 ## Main Docker host
 
 Most applications run inside the main Ubuntu LXC as Docker containers.

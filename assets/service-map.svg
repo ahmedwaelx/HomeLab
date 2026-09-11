@@ -1,0 +1,60 @@
+<svg width="1200" height="650" viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">HomeLab service map</title>
+  <desc id="desc">Grouped service map for infrastructure, dashboards, media, cloud, automation, and backup services.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#020617"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0 L0 0 0 36" fill="none" stroke="#1e293b" stroke-width="0.55"/></pattern>
+    <style>
+      .title{font:700 28px 'JetBrains Mono', ui-monospace, monospace;fill:#e2e8f0}.sub{font:500 13px 'JetBrains Mono', ui-monospace, monospace;fill:#94a3b8}
+      .h{font:700 15px 'JetBrains Mono', ui-monospace, monospace;fill:#f8fafc}.svc{font:600 12px 'JetBrains Mono', ui-monospace, monospace;fill:#dbeafe}.note{font:500 10px 'JetBrains Mono', ui-monospace, monospace;fill:#94a3b8}
+      .card{fill:rgba(15,23,42,.80);stroke:#334155;stroke-width:1.5;rx:18}.chip{rx:10;stroke-width:1.2}.cyan{fill:rgba(8,51,68,.55);stroke:#22d3ee}.green{fill:rgba(6,78,59,.55);stroke:#34d399}.violet{fill:rgba(76,29,149,.55);stroke:#a78bfa}.amber{fill:rgba(120,53,15,.45);stroke:#fbbf24}.rose{fill:rgba(136,19,55,.45);stroke:#fb7185}.slate{fill:rgba(30,41,59,.75);stroke:#94a3b8}
+    </style>
+  </defs>
+  <rect width="1200" height="650" fill="url(#bg)"/><rect width="1200" height="650" fill="url(#grid)" opacity=".75"/>
+  <circle cx="1040" cy="90" r="160" fill="#22d3ee" opacity=".08"/><circle cx="170" cy="575" r="170" fill="#a78bfa" opacity=".08"/>
+  <text x="52" y="58" class="title">HomeLab Service Map</text><text x="52" y="84" class="sub">Grouped view of the current self-hosted services — no secrets, no credentials</text>
+
+  <rect x="52" y="124" width="330" height="205" class="card"/><text x="78" y="158" class="h">Infrastructure</text>
+  <rect x="78" y="182" width="128" height="34" class="chip cyan"/><text x="104" y="204" class="svc">Proxmox VE</text>
+  <rect x="220" y="182" width="126" height="34" class="chip cyan"/><text x="254" y="204" class="svc">CT999</text>
+  <rect x="78" y="228" width="128" height="34" class="chip slate"/><text x="112" y="250" class="svc">Docker</text>
+  <rect x="220" y="228" width="126" height="34" class="chip slate"/><text x="248" y="250" class="svc">CasaOS</text>
+  <rect x="78" y="274" width="128" height="34" class="chip amber"/><text x="97" y="296" class="svc">Cloudflared</text>
+  <rect x="220" y="274" width="126" height="34" class="chip amber"/><text x="234" y="296" class="svc">Nginx Proxy</text>
+
+  <rect x="435" y="124" width="330" height="205" class="card"/><text x="461" y="158" class="h">Dashboards &amp; Ops</text>
+  <rect x="461" y="182" width="128" height="34" class="chip green"/><text x="505" y="204" class="svc">Homarr</text>
+  <rect x="603" y="182" width="126" height="34" class="chip green"/><text x="642" y="204" class="svc">Grafana</text>
+  <rect x="461" y="228" width="128" height="34" class="chip green"/><text x="493" y="250" class="svc">Prometheus</text>
+  <rect x="603" y="228" width="126" height="34" class="chip green"/><text x="628" y="250" class="svc">Uptime Kuma</text>
+  <rect x="461" y="274" width="128" height="34" class="chip rose"/><text x="493" y="296" class="svc">Tugtainer</text>
+  <rect x="603" y="274" width="126" height="34" class="chip rose"/><text x="632" y="296" class="svc">Portainer</text>
+
+  <rect x="818" y="124" width="330" height="205" class="card"/><text x="844" y="158" class="h">Cloud &amp; Private Data</text>
+  <rect x="844" y="182" width="128" height="34" class="chip violet"/><text x="873" y="204" class="svc">Nextcloud</text>
+  <rect x="986" y="182" width="126" height="34" class="chip violet"/><text x="1030" y="204" class="svc">Immich</text>
+  <rect x="844" y="228" width="128" height="34" class="chip violet"/><text x="870" y="250" class="svc">Vaultwarden</text>
+  <rect x="986" y="228" width="126" height="34" class="chip violet"/><text x="1018" y="250" class="svc">Guacamole</text>
+  <rect x="844" y="274" width="128" height="34" class="chip amber"/><text x="885" y="296" class="svc">Pi-hole</text>
+  <rect x="986" y="274" width="126" height="34" class="chip amber"/><text x="1026" y="296" class="svc">SMB/NFS</text>
+
+  <rect x="52" y="374" width="526" height="185" class="card"/><text x="78" y="408" class="h">Media &amp; Downloads</text>
+  <rect x="78" y="432" width="118" height="34" class="chip cyan"/><text x="119" y="454" class="svc">Plex</text>
+  <rect x="210" y="432" width="118" height="34" class="chip cyan"/><text x="245" y="454" class="svc">Sonarr</text>
+  <rect x="342" y="432" width="118" height="34" class="chip cyan"/><text x="378" y="454" class="svc">Bazarr</text>
+  <rect x="78" y="478" width="118" height="34" class="chip slate"/><text x="103" y="500" class="svc">qBittorrent</text>
+  <rect x="210" y="478" width="118" height="34" class="chip slate"/><text x="233" y="500" class="svc">JDownloader</text>
+  <rect x="342" y="478" width="160" height="34" class="chip slate"/><text x="364" y="500" class="svc">Social downloader</text>
+  <text x="78" y="536" class="note">Media library, subtitles, downloader automation, and Plex playback support.</text>
+
+  <rect x="622" y="374" width="526" height="185" class="card"/><text x="648" y="408" class="h">Automation, Backups &amp; Recovery</text>
+  <rect x="648" y="432" width="118" height="34" class="chip green"/><text x="693" y="454" class="svc">n8n</text>
+  <rect x="780" y="432" width="118" height="34" class="chip green"/><text x="805" y="454" class="svc">OrderVault</text>
+  <rect x="912" y="432" width="160" height="34" class="chip rose"/><text x="943" y="454" class="svc">Backup relay</text>
+  <rect x="648" y="478" width="118" height="34" class="chip violet"/><text x="679" y="500" class="svc">ZFS pools</text>
+  <rect x="780" y="478" width="118" height="34" class="chip amber"/><text x="807" y="500" class="svc">Proxmox</text>
+  <rect x="912" y="478" width="160" height="34" class="chip amber"/><text x="943" y="500" class="svc">Backup tiers</text>
+  <text x="648" y="536" class="note">Backups are tracked with alerts and dashboards; restore testing remains part of ops.</text>
+
+  <text x="52" y="615" class="note">Public repository view: exact secrets, passwords, tokens, and sensitive provider details are intentionally omitted.</text>
+</svg>

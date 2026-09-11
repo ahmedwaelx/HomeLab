@@ -1,5 +1,18 @@
 # HomeLab
 
+<p align="center">
+  <img src="assets/homelab-architecture.svg" alt="Ahmed HomeLab architecture diagram" width="100%">
+</p>
+
+<p align="center">
+  <img alt="Proxmox" src="https://img.shields.io/badge/Proxmox-VE-f97316?style=for-the-badge&logo=proxmox&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-Services-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+  <img alt="ZFS" src="https://img.shields.io/badge/ZFS-NAS-7c3aed?style=for-the-badge">
+  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Tunnel-f59e0b?style=for-the-badge&logo=cloudflare&logoColor=white">
+  <img alt="Grafana" src="https://img.shields.io/badge/Grafana-Monitoring-F46800?style=for-the-badge&logo=grafana&logoColor=white">
+</p>
+
+
 A living documentation repo for my current self-hosted homelab.
 
 This repository started as a beginner guide for turning an old PC into a Proxmox + Docker home server. The current environment has grown into a two-node Proxmox setup with ZFS-backed NAS storage, a central Docker services container, private and public access layers, monitoring, backups, and media/cloud automation.
@@ -40,6 +53,11 @@ This repository started as a beginner guide for turning an old PC into a Proxmox
 - [Original v1 tutorial archive](docs/legacy-v1-original-guide/)
 
 ## Current service groups
+
+<p align="center">
+  <img src="assets/service-map.svg" alt="HomeLab service map" width="100%">
+</p>
+
 
 ### Core infrastructure
 
