@@ -1,45 +1,114 @@
-# 🚀 Turning your old PC into Home Server ( In Progress )
-[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/ahmmedwael)
+# HomeLab
 
-### Turn Your Old PC into a Resource-Efficient Home Server for Your Home Lab
+A living documentation repo for my current self-hosted homelab.
 
-Have an old PC lying around? Don't let it go to waste! Transform it into a powerful home server for your personal home lab using minimal resources. With just a few simple steps, you can repurpose your old hardware to create a versatile server environment. This README guide provides a straightforward walkthrough to help you get started.
+This repository started as a beginner guide for turning an old PC into a Proxmox + Docker home server. The current environment has grown into a two-node Proxmox setup with ZFS-backed NAS storage, a central Docker services container, private and public access layers, monitoring, backups, and media/cloud automation.
 
-## Features:
+> Security note: this is public documentation. Keep real passwords, API tokens, tunnel tokens, recovery keys, private hostnames, and provider credentials out of the repo.
 
-- ### **Resource Efficiency:**
-     Learn how to optimize your server's performance using lightweight operating systems and software, ensuring you make the most of your old hardware.
+## Current architecture
 
-- ### **Home Lab Essentials:**
-    Set up services like file storage, media streaming, virtualization, and more, creating a versatile testing ground for your projects.
+- **Proxmox cluster** with two nodes:
+  - Main node: primary compute/storage host
+  - Mini node: secondary node running the Hermes VM and backup storage
+- **Main Ubuntu LXC / Docker host**:
+  - Runs most self-hosted applications
+  - Provides SMB/NFS NAS access
+  - Hosts Docker, CasaOS, Portainer, Homarr, Nginx Proxy Manager, monitoring, media services, and automation tools
+- **ZFS storage**:
+  - Main pool for NAS/application data
+  - Secondary pool for backup tier
+- **Access layers**:
+  - Local LAN access
+  - Nginx Proxy Manager for local reverse proxying
+  - Cloudflare Tunnel for selected public services
+- **Observability and backups**:
+  - Grafana + Prometheus stack
+  - Uptime Kuma checks
+  - Proxmox backup jobs and alert relay
 
-- ### **Step-by-Step Instructions:**
-    Follow the detailed instructions and commands to easily install, configure, and maintain your server, even if you're not a seasoned sysadmin.
+## Documentation map
 
-- ### **Low Cost, High Returns:**
-    By repurposing existing hardware, you'll save money while gaining valuable experience in server management and networking.
+- [Architecture overview](docs/01-architecture-overview.md)
+- [Network and access model](docs/02-network-and-access.md)
+- [Proxmox cluster](docs/03-proxmox-cluster.md)
+- [Storage, NAS, and ZFS](docs/04-storage-nas-zfs.md)
+- [Docker host and service catalog](docs/05-docker-host-and-services.md)
+- [Public access and reverse proxy](docs/06-public-access-and-reverse-proxy.md)
+- [Backups and monitoring](docs/07-backups-and-monitoring.md)
+- [Maintenance and recovery notes](docs/08-maintenance-and-recovery.md)
+- [Original v1 tutorial archive](docs/legacy-v1-original-guide/)
 
-## Contents:
+## Current service groups
 
-### [x] 1. **Hardware Assessment:**
-- Determine if your old PC meets the basic requirements to serve as a home server.
+### Core infrastructure
 
-### [x] 2. **Choosing the Right OS:**
-- Explore lightweight Linux distributions and other operating systems suitable for minimal hardware.
+- Proxmox VE
+- Ubuntu LXC Docker host
+- Docker / Docker Compose
+- CasaOS
+- Portainer
+- Tugtainer
+- Nginx Proxy Manager
+- Cloudflared
+- Samba / NFS
+- Pi-hole
 
-### [x] 3. **Installation Guide:**
-- Follow the step-by-step installation instructions for your chosen OS.
+### Dashboards and monitoring
 
-### [x] 4. **Remote Access:** 
-- Set up remote access tools like SSH and VPN to manage your server from anywhere.
+- Homarr
+- Grafana
+- Prometheus
+- Node Exporter
+- Blackbox Exporter
+- Uptime Kuma
 
-### [ ] 5. **Service Setup:**
-- Configure essential services such as file sharing (Samba, NFS), media streaming (Plex, Jellyfin), and virtualization (Proxmox, VirtualBox).
+### Media and downloads
 
+- Plex
+- Sonarr
+- Bazarr
+- qBittorrent
+- JDownloader
+- Social video downloader
+- Telegram media downloader
 
-### [ ] 6. **Maintenance and Troubleshooting:**
-- Tips for keeping your server running smoothly and addressing common issues.
+### Cloud and personal data
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+- Nextcloud AIO
+- Immich
+- Vaultwarden
+- Guacamole
+
+### Automation and custom apps
+
+- n8n
+- OrderVault
+- Backup alert relay
+
+## What changed since the original guide
+
+The original documentation covered a simple path:
+
+1. Install Proxmox on an old PC.
+2. Create an Ubuntu container.
+3. Install Docker.
+4. Install Portainer.
+5. Add Heimdall, Cloudflare Tunnel, and VPN basics.
+
+The current system is now closer to a small production homelab platform:
+
+- Two Proxmox nodes instead of one standalone host
+- ZFS pools and NAS datasets instead of basic local storage
+- Multiple dashboards instead of only Heimdall
+- Public and local reverse proxy layers
+- Monitoring and backup observability
+- Media automation, cloud storage, password management, and custom tools
+
+## Update policy
+
+- Document architecture and operating procedures, not secrets.
+- Prefer examples and placeholders for sensitive host-specific values.
+- Keep destructive commands out of quick-start sections.
+- Backup before changing services.
+- Verify services after restart or update.
