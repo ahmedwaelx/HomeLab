@@ -64,3 +64,11 @@ zfs list
 ```
 
 Do not run destructive disk or pool commands from documentation snippets without a fresh discovery pass.
+
+## Live visual snapshot
+
+<p align="center">
+  <img src="../assets/screenshots/proxmox-interface.png" alt="Public-safe Proxmox live cluster snapshot" width="100%">
+</p>
+
+This visual is generated from read-only Proxmox API data instead of a logged-in admin UI screenshot, so it can show the current cluster shape without exposing privileged interface details.

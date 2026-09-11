@@ -41,13 +41,18 @@ This repository started as a beginner guide for turning an old PC into a Proxmox
   - Proxmox backup jobs and alert relay
 
 
+
 ## Live screenshots
 
-These screenshots are captured from the live homelab and sanitized before committing. They avoid credentials, tokens, private URLs, and detailed personal media/file listings.
+These visuals are captured or generated from the live homelab and sanitized before committing. They avoid credentials, tokens, private URLs, and detailed personal media/file listings.
 
 <p align="center">
-  <img src="assets/screenshots/social-downloader.png" alt="Sanitized live screenshot of social video downloader" width="48%">
-  <img src="assets/screenshots/grafana-login.png" alt="Sanitized live screenshot of Grafana entrypoint" width="48%">
+  <img src="assets/screenshots/proxmox-interface.png" alt="Public-safe Proxmox live cluster snapshot" width="100%">
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/casaos-interface.png" alt="Sanitized live CasaOS interface screenshot" width="48%">
+  <img src="assets/screenshots/grafana-login.png" alt="Sanitized live Grafana entrypoint screenshot" width="48%">
 </p>
 
 ## Documentation map
@@ -98,7 +103,6 @@ These screenshots are captured from the live homelab and sanitized before commit
 - Bazarr
 - qBittorrent
 - JDownloader
-- Social video downloader
 - Telegram media downloader
 
 ### Cloud and personal data
