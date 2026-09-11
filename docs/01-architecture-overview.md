@@ -1,5 +1,10 @@
 # Architecture overview
 
+## Visual overview
+
+<p align="center">
+  <img src="../assets/homelab-architecture.svg" alt="Visual overview" width="100%">
+</p>
 ## Purpose
 
 This homelab is used for self-hosting, media management, automation, private cloud storage, dashboards, and infrastructure experiments.
