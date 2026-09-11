@@ -1,6 +1,6 @@
 <svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Ahmed's HomeLab architecture</title>
-  <desc id="desc">Dark themed architecture diagram showing Internet, Cloudflare Tunnel, reverse proxy, Docker host, Proxmox cluster, ZFS storage, backups, and monitoring.</desc>
+  <desc id="desc">Dark themed architecture diagram showing Internet, Cloudflare Tunnel, ports 80/81/443 + cloudflared, Docker host, Proxmox cluster • live read-only snapshot, ZFS storage, backups, and monitoring.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020617"/>
@@ -49,15 +49,15 @@
   <circle cx="145" cy="650" r="180" fill="#a78bfa" opacity="0.08"/>
 
   <text x="52" y="58" class="title">Ahmed's HomeLab</text>
-  <text x="52" y="84" class="sub">Two-node Proxmox • ZFS NAS • Docker services • monitored backups • controlled public access</text>
+  <text x="52" y="84" class="sub">Proxmox VE 9.2.4 • CT999 Ubuntu Docker/NAS • tank + backupmini ZFS • Cloudflare/NPM • monitored backups</text>
 
   <!-- boundaries -->
   <rect x="390" y="126" width="760" height="548" class="boundary"/>
-  <text x="410" y="154" class="small">Proxmox cluster</text>
+  <text x="410" y="154" class="small">Proxmox cluster • live read-only snapshot</text>
   <rect x="430" y="190" width="330" height="420" class="boundary" opacity=".95"/>
-  <text x="452" y="216" class="small">Main node</text>
+  <text x="452" y="216" class="small">Main node: proxmox</text>
   <rect x="800" y="190" width="310" height="420" class="boundary" opacity=".95"/>
-  <text x="822" y="216" class="small">Mini node</text>
+  <text x="822" y="216" class="small">Mini node: proxmoxmini</text>
 
   <!-- arrows behind boxes -->
   <path d="M150 220 C230 220 250 220 320 220" class="line"/>
@@ -79,34 +79,34 @@
 
   <!-- main node -->
   <rect x="460" y="244" width="150" height="84" class="boxbg"/><rect x="460" y="244" width="150" height="84" class="cyan"/>
-  <text x="492" y="278" class="label">NPM / LAN</text><text x="481" y="303" class="small">reverse proxy</text>
+  <text x="492" y="278" class="label">NPM + Tunnel</text><text x="481" y="303" class="small">ports 80/81/443 + cloudflared</text>
 
   <rect x="710" y="244" width="140" height="84" class="boxbg"/><rect x="710" y="244" width="140" height="84" class="green"/>
-  <text x="752" y="278" class="label">CT999</text><text x="728" y="303" class="small">Ubuntu Docker host</text>
+  <text x="752" y="278" class="label">CT999 Ubuntu</text><text x="728" y="303" class="small">main Docker + NAS LXC</text>
 
   <rect x="460" y="438" width="260" height="108" class="boxbg"/><rect x="460" y="438" width="260" height="108" class="green"/>
-  <text x="492" y="474" class="label">Docker service platform</text>
-  <text x="482" y="500" class="small">Nextcloud • Immich • Plex • n8n</text>
-  <text x="482" y="518" class="small">Vaultwarden • Sonarr • Bazarr</text>
+  <text x="492" y="474" class="label">Docker apps on CT999</text>
+  <text x="482" y="500" class="small">Nextcloud • Immich v3.1 • Plex • n8n</text>
+  <text x="482" y="518" class="small">Vaultwarden • Sonarr • Bazarr • Grafana</text>
 
   <rect x="460" y="570" width="260" height="72" class="boxbg"/><rect x="460" y="570" width="260" height="72" class="violet"/>
-  <text x="520" y="604" class="label">ZFS pool: tank</text><text x="500" y="626" class="small">NAS datasets + app data + backups</text>
+  <text x="520" y="604" class="label">ZFS: tank ONLINE</text><text x="500" y="626" class="small">~4 TB pool for NAS/app data/backups</text>
 
   <!-- mini node -->
   <rect x="855" y="244" width="200" height="88" class="boxbg"/><rect x="855" y="244" width="200" height="88" class="cyan"/>
-  <text x="908" y="280" class="label">VM100 Hermes</text><text x="900" y="305" class="small">assistant / automation VM</text>
+  <text x="908" y="280" class="label">VM100 Hermes</text><text x="900" y="305" class="small">runs on proxmoxmini</text>
 
   <rect x="855" y="442" width="200" height="88" class="boxbg"/><rect x="855" y="442" width="200" height="88" class="violet"/>
-  <text x="892" y="478" class="label">backupmini pool</text><text x="895" y="503" class="small">secondary local backup tier</text>
+  <text x="892" y="478" class="label">ZFS: backupmini ONLINE</text><text x="895" y="503" class="small">~1 TB secondary backup tier</text>
 
   <rect x="855" y="570" width="200" height="72" class="boxbg"/><rect x="855" y="570" width="200" height="72" class="rose"/>
-  <text x="910" y="604" class="label">Backup jobs</text><text x="892" y="626" class="small">Proxmox + config timers</text>
+  <text x="910" y="604" class="label">Backup flows</text><text x="892" y="626" class="small">CT999 → tank • main → mini tier</text>
 
   <!-- observability -->
   <rect x="86" y="488" width="238" height="112" class="boxbg"/><rect x="86" y="488" width="238" height="112" class="slate"/>
   <text x="126" y="526" class="label">Observability</text>
-  <text x="114" y="552" class="small">Grafana • Prometheus</text>
-  <text x="116" y="570" class="small">Uptime Kuma • alerts</text>
+  <text x="114" y="552" class="small">Grafana 13 • Prometheus</text>
+  <text x="116" y="570" class="small">Uptime Kuma • Telegram relay</text>
   <path d="M324 544 C380 544 405 520 460 505" class="line dash"/>
 
   <!-- legend -->

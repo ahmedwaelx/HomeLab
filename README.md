@@ -40,6 +40,16 @@ This repository started as a beginner guide for turning an old PC into a Proxmox
   - Uptime Kuma checks
   - Proxmox backup jobs and alert relay
 
+
+## Live screenshots
+
+These screenshots are captured from the live homelab and sanitized before committing. They avoid credentials, tokens, private URLs, and detailed personal media/file listings.
+
+<p align="center">
+  <img src="assets/screenshots/social-downloader.png" alt="Sanitized live screenshot of social video downloader" width="48%">
+  <img src="assets/screenshots/grafana-login.png" alt="Sanitized live screenshot of Grafana entrypoint" width="48%">
+</p>
+
 ## Documentation map
 
 - [Architecture overview](docs/01-architecture-overview.md)

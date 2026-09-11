@@ -104,3 +104,11 @@ ss -ltnp
 ```
 
 Never paste secrets from `docker inspect`, `.env`, compose files, or application configs into public documentation.
+
+## Live UI snapshot: social downloader
+
+<p align="center">
+  <img src="../assets/screenshots/social-downloader.png" alt="Sanitized live screenshot of the social video downloader UI" width="100%">
+</p>
+
+This is a sanitized live capture from the CT999 social video downloader. Dynamic file/history areas are intentionally blurred before committing.
