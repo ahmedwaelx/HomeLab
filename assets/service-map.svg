@@ -44,7 +44,6 @@
   <rect x="342" y="432" width="118" height="34" class="chip cyan"/><text x="378" y="454" class="svc">Bazarr</text>
   <rect x="78" y="478" width="118" height="34" class="chip slate"/><text x="103" y="500" class="svc">qBittorrent</text>
   <rect x="210" y="478" width="118" height="34" class="chip slate"/><text x="233" y="500" class="svc">JDownloader</text>
-  <rect x="342" y="478" width="160" height="34" class="chip slate"/><text x="364" y="500" class="svc">Video downloader</text>
   <text x="78" y="536" class="note">Media library, subtitles, downloader automation, and Plex playback support.</text>
 
   <rect x="622" y="374" width="526" height="185" class="card"/><text x="648" y="408" class="h">Automation, Backups &amp; Recovery</text>

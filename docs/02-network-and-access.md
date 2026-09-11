@@ -44,7 +44,6 @@ Bazarr                      6767
 qBittorrent                 8181
 Pi-hole                     8800 / DNS port mapping
 Guacamole                   8090
-Social video downloader     8095
 Telegram media downloader   8096
 Backup alert relay          8098
 ```

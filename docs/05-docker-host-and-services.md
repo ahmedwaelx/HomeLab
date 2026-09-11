@@ -50,7 +50,6 @@ Sonarr                  TV automation
 Bazarr                  Subtitle automation
 qBittorrent             Torrent client
 JDownloader             Download manager
-Social video downloader Custom yt-dlp based downloader
 Telegram media downloader Telegram media archive/downloader
 ```
 
@@ -105,10 +104,10 @@ ss -ltnp
 
 Never paste secrets from `docker inspect`, `.env`, compose files, or application configs into public documentation.
 
-## Live UI snapshot: social downloader
+## Live UI snapshot: CasaOS
 
 <p align="center">
-  <img src="../assets/screenshots/social-downloader.png" alt="Sanitized live screenshot of the social video downloader UI" width="100%">
+  <img src="../assets/screenshots/casaos-interface.png" alt="Sanitized live screenshot of the CasaOS interface" width="100%">
 </p>
 
-This is a sanitized live capture from the CT999 social video downloader. Dynamic file/history areas are intentionally blurred before committing.
+This is a sanitized live capture of the CasaOS entrypoint. Credentials and input values are not shown.
