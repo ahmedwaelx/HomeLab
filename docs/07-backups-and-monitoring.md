@@ -76,3 +76,11 @@ Suggested restore tests:
 - Verify one app database export can be read
 - Verify one NAS dataset/file restore path
 - Document exact restore steps after every successful drill
+
+## Live UI snapshot: monitoring entrypoint
+
+<p align="center">
+  <img src="../assets/screenshots/grafana-login.png" alt="Sanitized live screenshot of the Grafana monitoring entrypoint" width="100%">
+</p>
+
+This is a sanitized live capture of the Grafana monitoring entrypoint. It confirms the monitoring UI is present without exposing dashboard data or credentials.
